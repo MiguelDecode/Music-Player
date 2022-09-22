@@ -1,1 +1,35 @@
 # Music-Player coworking project
+
+## Objetivos del proyecto
+
+  - Mejorar el desempeño con javascript y git.
+
+## Definición del proyecto
+
+  - Tecnologías a usar: 
+     - Javascript
+     - Vite
+     - HTML
+     - CSS
+  
+  - Colaboradores: 
+
+  - Wireframe del proyecto
+
+
+## Puesta en marcha del proyecto
+
+  - Creación de un repositorio y configuraciones iniciales
+
+  - Agregar a todos los colaboradores
+
+## On boarding al proyecto
+1. Realizar un git clone del proyecto.
+2. Una vez dentro del proyecto ejecutar el comando npm install para instalar las dependencias
+3. Se recomienda tener instalada la extension de Eslint para recibir mas información del linter
+4. Se recomienda tener instalada la extension de Prettier para formatear el código de manera mas sencilla
+5. El primer arranque y los consecutivos del proyecto se realizarán con el comando npm run dev. Lo cual iniciara el proyecto en local.
+
+## Desarollo del proyecto
+
+## Recursos útiles para el proyecto
