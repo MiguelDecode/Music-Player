@@ -11,17 +11,15 @@
      - Vite
      - HTML
      - CSS
-  
-  - Colaboradores: 
 
   - Wireframe del proyecto
 
 
 ## Puesta en marcha del proyecto
 
-  - Creación de un repositorio y configuraciones iniciales
+  [X] Creación de un repositorio y configuraciones iniciales
 
-  - Agregar a todos los colaboradores
+  [X] Agregar a todos los colaboradores
 
 ## On boarding al proyecto
 1. Realizar un git clone del proyecto.
