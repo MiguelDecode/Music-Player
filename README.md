@@ -33,3 +33,6 @@
 ## Desarollo del proyecto
 
 ## Recursos útiles para el proyecto
+[Significado de Backlog](https://muyagile.com/que-es-el-backlog/)
+
+[Figma Mockup](https://www.figma.com/file/CIh84D8BZjFNn7xUulTW06/Music-Player-(Community)?node-id=0%3A1)
