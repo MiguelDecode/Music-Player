@@ -30,6 +30,13 @@
 
 ## Desarollo del proyecto
 
+- welcome branch : Create welcome page
+- login branch: Create login structure
+- sign-up branch: Create sign-up structure 
+- home branch: Create home structure
+- player-music branch : Create structure of player music page
+- search branch: Create search structure page
+
 ## Recursos útiles para el proyecto
 [Significado de Backlog](https://muyagile.com/que-es-el-backlog/)
 
