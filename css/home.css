@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    /* Colors */
+    --color-white: hsla(0, 0%, 100%, 1);
+    --clr-black: hsla(0, 0%, 0%, 1);
+    --clr-grey: hsla(0, 0%, 0%, 0.57);
+    --bg-clr-magenta: hsla(284, 83%, 76%, 1);
+    --border-icon-clr: hsla(277, 26%, 11%, 1);
+    --bg-clr-ligthviolet: hsl(259, 49%, 62%);
+    /* Typo */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+
+.home__container {
+    background-color: var(--bg-clr-magenta);
+    border-radius: 0.5rem;
+}
+
+.home__footer {
+    background-color: var(--bg-clr-ligthviolet);
+}

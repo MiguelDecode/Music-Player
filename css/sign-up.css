@@ -70,19 +70,18 @@ button {
     border-radius: 10px;
     font-size: 20px;
     font-weight: 500;
-
 }
 
 .submit-btn {
     border: none;
-    background-color: #DA8EF4;
-    color: #fff
+    background-color: #da8ef4;
+    color: #fff;
 }
 
 .google-btn {
-    border: solid 1px #DA8EF4;
+    border: solid 1px #da8ef4;
     background-color: #fff;
-    color: #DA8EF4;
+    color: #da8ef4;
 }
 
 .account {
@@ -93,6 +92,6 @@ button {
 
 .account a {
     text-decoration: none;
-    color: #4484FF;
+    color: #4484ff;
     font-weight: 400;
 }
