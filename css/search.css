@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    background-color: #da8ef4;
+}
+
+.search {
+    padding: 2rem;
+}
+
+.filter-icon {
+    display: block;
+}
+
+.search__input {
+    width: 100%;
+    height: 2.75rem;
+    margin-top: 2rem;
+    border-radius: 0.625rem;
+    background-color: hsla(0, 5%, 82%, 0.36);
+    padding-left: 2rem;
+    padding-right: 1rem;
+    border: 2px solid hsla(0, 0%, 0%, 0.5);
+}
+
+.search__box {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 3rem;
+    gap: 4rem;
+}
+
+.artist {
+    width: 7rem;
+    height: 7rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border: 1px solid hsla(0, 0%, 0%, 0.5);
+    background-image: url('../img/Rectangle\ 67.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu-mobile {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.menu-mobile__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0 2rem;
+}
+
+.menu-mobile__image {
+  filter: invert(1);
+  width: 3rem;
+  height: 3rem;
+}
