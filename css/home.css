@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    /* Colors */
+    --color-white: hsla(0, 0%, 100%, .9);
+    --clr-black: hsla(0, 0%, 0%, 1);
+    --clr-grey: hsla(0, 0%, 0%, 0.57);
+    --bg-clr-magenta: hsla(284, 83%, 76%, 1);
+    --border-icon-clr: hsla(277, 26%, 11%, 1);
+    --bg-clr-ligthviolet: hsl(259, 49%, 62%);
+    /* Typo */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+    /* box-sizing: border-box; */
+    font-family: 'Roboto', sans-serif; 
+  /*   margin: 0; */
+}
+
+/* img {
+    width: 200px;
+    height: 200px;
+} */
+html,body {
+    margin: 0;
+    max-width:25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    background-color: var(--bg-clr-ligthviolet);
+    /* padding-left: 5%;
+    padding-right: 5%; */
+}
+.home__container {
+    background-color: var(--bg-clr-magenta);
+    border-radius: 0.5rem;
+    width: 25rem;
+    height: 48.3125rem; 
+}
+.home__header{
+    margin-top:2rem;
+    width: 90%;
+    height:6.25rem;
+    padding-left: 5%;
+    text-align: start;
+}
+
+.home__title{
+margin-bottom: 0;
+width: 10.4375rem;
+/* height: 4.5rem; */
+font-size: 1.5rem;
+font-weight: var(--fw-bold);
+color: var(--clr-black);
+}
+
+.home__subtitle{
+color: var(--clr-grey);
+font-size: 0.75rem;
+margin-top: 0;
+font-weight: var(--fw-bold);
+}
+
+.home__nav-list{
+    display: flex;
+    width: 100%;
+    padding-left: 0;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-decoration: none;
+    list-style-type: none;  
+}
+.home__nav-anchor{
+    color:hsla(0, 1%, 4%, 0.7);
+    text-decoration: none;
+    display: inline;
+}
+
+.home__footer {
+    /* background-color: var(--bg-clr-ligthviolet); */
+    /* width: 375px; */
+    height: 63px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home__explore-section{
+    width:100%;
+    height: 9.4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   /*  padding-left: 5%;
+    padding-right: 5%; */
+    gap: 1rem;
+}
+
+.home__explore-card {
+    height: 10rem;
+    background-color: rgb(110,78,124);
+    border-radius: 5%;
+    width: 9.5625rem;
+}
+.one{
+    /* width:12.0625rem; */
+    margin-left:5%;
+}
+/* .two{
+    width: 9.5625rem;
+} */
+.active{
+    width:12.0625rem;
+}
+.home__explore-image-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+.home__explore-image{
+    width: 100%;
+    height: 7.6875rem;
+    object-fit: cover;
+    border-radius: 5%;
+}
+.home__explore-caption{
+    padding-top:0.5rem;
+    color: var(--color-white);
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+.home__for-you-section{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    gap: 1rem;
+    padding-left: 5%;
+}
+.home__for-you-title{
+    color: var(--color-white);
+    opacity: 0.8;
+    padding-left: 5%;
+}
+.home__for-you-music-card{
+    width:10rem;
+    height: 11.25rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
+    /* justify-content: space-around; */
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.home__for-you-image-container{
+    display:grid;
+    grid-template-columns: auto auto;
+    margin: 0;
+    border-radius: 5%;
+}
+.home__for-you-genre{
+    width: 10rem;
+    height: 11.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    /* top:1rem;
+    left: 2.5rem; */
+    background-color:rgba(0,0,0,0.1);
+    color:var(--color-white);
+    opacity:0.8;
+    background-image: linear-gradient(to bottom,rgba(193, 190, 190, 0),rgb(1, 1, 1) );
+    border-radius: 5%;
+}
+.home__for-you-container-tracks{
+    padding-bottom:0.8rem;
+}
+.home__for-you-image{
+    width: 5rem;
+    height: 5.625rem;
+    
+}
+.home__for-you-genre-text-tracks{
+    font-size: 0.875rem;
+}
+.home__for-you-img-musical-key{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 5%;
+    color:white;
+    /* mix-blend-mode: difference; */
+}
+.home__footer{
+    width: 100%;
+    border-radius: 8%;
+}
+.home__footer-nav{
+    display: flex;
+    width: 100%;
+    padding-left: 0;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-decoration: none;
+    list-style-type: none; 
+}
+.home__footer-i{
+    color:hsla(0, 1%, 4%, 0.7);
+    text-decoration: none;
+    display: inline;
+}
+.home__footer-i{
+    width: 1rem;
+}
