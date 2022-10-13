@@ -73,16 +73,19 @@ padding-right: 5%; */
 .home__nav-list{
     display: flex;
     width: 100%;
-    /* padding-left: 0; */
+    padding-left: 0;
     justify-content: space-around;
     align-items: flex-start;
     text-decoration: none;
-    list-style-type: none;  
+    list-style-type: none;   
+    /* color:hsla(0, 1%, 4%, 0.7); */
 }
 .home__nav-anchor{
     color:hsla(0, 1%, 4%, 0.7);
     text-decoration: none;
     display: inline;
+    font-size:0.8rem;
+    font-weight: var(--fw-medium);
 }
 
 .home__footer {
