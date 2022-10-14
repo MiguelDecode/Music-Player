@@ -107,7 +107,7 @@ padding-right: 5%; */
 }
 
 .home__explore-card {
-    height: 10rem;
+    height: 100%;
     background-color: rgb(110,78,124);
     border-radius: 5%;
     width: 9.5rem;
