@@ -114,10 +114,10 @@ padding-right: 5%; */
     border-radius: 5%;
     width: 9.5625rem;
 }
-.one{
-    /* width:12.0625rem; */
+/* .one{
+    width:12.0625rem;
     margin-left:5%;
-}
+} */
 /* .two{
     width: 9.5625rem;
 } */
@@ -147,20 +147,20 @@ padding-right: 5%; */
     display: grid;
     grid-template-columns:  1fr 1fr;
     gap: 1rem;
-   /*  padding-left: 5%; */
+    margin-inline:auto;
+    padding-block-end: 5%;
 }
 .home__for-you-title{
     color: var(--color-white);
     opacity: 0.8;
-    /* padding-left: 5%; */
+    padding-left: 5%;
 }
 .home__for-you-music-card{
     width:10rem;
     height: 11.25rem;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     position: relative;
-    /* justify-content: space-around; */
     border-radius: 5%;
     overflow: hidden;
 }
