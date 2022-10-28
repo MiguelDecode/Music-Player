@@ -20,33 +20,32 @@ searchInput.addEventListener('change', () => {
     )
         .then((response) => response.json())
         .then((response) => {
-            console.log(response)
 
             const data = response.artists.items
 
-            console.log(data)
+            const drawCards = () => {
+                cardsBox.innerHTML = ''
 
-            const drawCards = data.map((artist) => {
-                const card = document.createElement('section')
-                const bg = artist.data.visuals.avatarImage.sources[0].url
-                card.style.backgroundImage = `url(${bg})`
-                const nameCard = document.createElement('h3')
-                const name = artist.data.profile.name
-                nameCard.textContent = name
-                card.appendChild(nameCard)
+                const resultSearch = new DocumentFragment()
 
-                return card
-            })
+                data.forEach((element, index) => {
+                    if (data[index].data.visuals.avatarImage !== null) {
+                        const card = document.createElement('section')
+                        card.classList.add('artist')
+                        const bgLink =
+                            data[index].data.visuals.avatarImage.sources[0].url
+                        card.style.setProperty(
+                            'background-image',
+                            `url('${bgLink}')`
+                        )
+                        resultSearch.append(card)
+                    }
+                })
 
-            cardsBox.appendChild(drawCards())
+                cardsBox.append(resultSearch)
+            }
+
+            drawCards()
         })
         .catch((err) => console.error(err))
-})
-
-// Método para pintar las cards de los artistas
-const artists = document.querySelectorAll('.artist')
-
-artists.forEach((artist) => {
-    const bg = artist.getAttribute('data-bg')
-    artist.style.backgroundImage = `url('${bg}')`
 })

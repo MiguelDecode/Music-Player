@@ -8,6 +8,7 @@ body {
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
     background-color: #da8ef4;
+    margin: 0;
 }
 
 .search {
@@ -39,6 +40,7 @@ body {
     place-items: center;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 3rem;
+    margin-bottom: 5rem;
     gap: 4rem;
 }
 
@@ -63,6 +65,13 @@ body {
 }
 
 .menu-mobile {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px 10px 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
     position: fixed;
     width: 100%;
     bottom: 0;
