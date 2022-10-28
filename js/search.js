@@ -21,28 +21,30 @@ searchInput.addEventListener('change', () => {
         .then((response) => response.json())
         .then((response) => {
 
-            const data = response.artists.items
+            const result = response.artists.items
+
+            console.log(result)
 
             const drawCards = () => {
                 cardsBox.innerHTML = ''
 
-                const resultSearch = new DocumentFragment()
+                const totalResult = new DocumentFragment()
 
-                data.forEach((element, index) => {
-                    if (data[index].data.visuals.avatarImage !== null) {
+                result.forEach((element, index) => {
+                    if (result[index].data.visuals.avatarImage !== null) {
                         const card = document.createElement('section')
                         card.classList.add('artist')
                         const bgLink =
-                            data[index].data.visuals.avatarImage.sources[0].url
+                            result[index].data.visuals.avatarImage.sources[0].url
                         card.style.setProperty(
                             'background-image',
                             `url('${bgLink}')`
                         )
-                        resultSearch.append(card)
+                        totalResult.append(card)
                     }
                 })
 
-                cardsBox.append(resultSearch)
+                cardsBox.append(totalResult)
             }
 
             drawCards()
