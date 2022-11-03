@@ -38,30 +38,45 @@ body {
 .search__box {
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(8rem,1fr));
     margin-top: 3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
     gap: 4rem;
 }
 
 .artist {
+    position: relative;
     width: 7rem;
     height: 7rem;
-    background-color: #fff;
     border-radius: 0.5rem;
-    border: 1px solid hsla(0, 0%, 0%, 0.5);
-    background-position: center;
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+
+    overflow: hidden;
+}
+
+.artist::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgb(18, 19, 22), rgba(18, 18, 18, 0));
+    z-index: 1;
+    height: calc(7rem - 50%);
+    width: 100%;
 }
 
 .artist__name {
+    text-align: center;
     font-size: 0.75rem;
     color: #eaf0ff;
+    z-index: 2;
 }
 
 .menu-mobile {

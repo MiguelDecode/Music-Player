@@ -1,5 +1,6 @@
 const searchInput = document.getElementById('search-input')
 const cardsBox = document.getElementById('cards-box')
+const radioInput = document.getElementById('filter-search')
 
 // API Search General Search
 
@@ -20,7 +21,6 @@ searchInput.addEventListener('change', () => {
     )
         .then((response) => response.json())
         .then((response) => {
-
             const result = response.artists.items
 
             console.log(result)
@@ -32,14 +32,22 @@ searchInput.addEventListener('change', () => {
 
                 result.forEach((element, index) => {
                     if (result[index].data.visuals.avatarImage !== null) {
-                        const card = document.createElement('section')
-                        card.classList.add('artist')
+                        const card = document.createElement('article')
+                        const cardName = document.createElement('h3')
                         const bgLink =
-                            result[index].data.visuals.avatarImage.sources[0].url
+                            result[index].data.visuals.avatarImage.sources[0]
+                                .url
+                        const name = result[index].data.profile.name
+                        card.classList.add('artist')
+                        cardName.classList.add('artist__name')
+                        card.appendChild(cardName)
+                        cardName.textContent = name
                         card.style.setProperty(
                             'background-image',
                             `url('${bgLink}')`
                         )
+                        card.appendChild(cardName)
+
                         totalResult.append(card)
                     }
                 })
@@ -51,3 +59,9 @@ searchInput.addEventListener('change', () => {
         })
         .catch((err) => console.error(err))
 })
+
+const searchValue = Array.from(document.getElementsByName('filter-search')).find(el => el.checked);
+
+console.log(searchValue)
+
+// let genderS = Array.from(document.getElementsByName("genderS")).find(r => r.checked).value;

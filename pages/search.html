@@ -25,6 +25,65 @@
                 src="../img/filter-icon.png"
                 alt="Filter icon"
             />
+            <fieldset id="filter-search">
+                <legend>Select your preference search</legend>
+                <input
+                    type="radio"
+                    name="filter-search"
+                    id="albums"
+                    value="albums"
+                />
+                <label for="albums">Albums</label>
+                <input
+                    type="radio"
+                    name="filter-search"
+                    id="artists"
+                    value="artists"
+                />
+                <label for="artists">Artists</label>
+                <input
+                    type="radio"
+                    name="filter-search"
+                    id="episodes"
+                    value="episodes"
+                />
+                <label for="episodes">Episodes</label>
+                <input
+                    type="radio"
+                    name="filter-search"
+                    id="genres"
+                    value="genres"
+                />
+                <label for="genres">Genres</label>
+                <input
+                    type="radio"
+                    name="filter-search"
+                    id="playlists"
+                    value="playlists"
+                />
+                <label for="playlists">Playlists</label>
+                <input
+                    type="radio"
+                    name="filter-search"
+                    id="podcasts"
+                    value="podcasts"
+                />
+                <label for="podcasts">Podcasts</label>
+                <input
+                    type="radio"
+                    name="filter-search"
+                    id="tracks"
+                    value="tracks"
+                />
+                <label for="tracks">Tracks</label>
+                <input
+                    type="radio"
+                    name="filter-search"
+                    id="users"
+                    value="users"
+                />
+                <label for="users">Users</label>
+            </fieldset>
             <input
                 class="search__input"
                 type="search"
@@ -32,8 +91,7 @@
                 id="search-input"
                 placeholder="Search"
             />
-            <article class="search__box" id="cards-box">
-            </article>
+            <section class="search__box" id="cards-box"></section>
         </main>
         <footer class="menu-mobile">
             <ul class="menu-mobile__list">
